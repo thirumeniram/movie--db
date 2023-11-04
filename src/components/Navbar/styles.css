@@ -1,0 +1,47 @@
+
+.toolbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 240px;
+  }
+  
+  @media (max-width: 600px) { /* 'sm' typically translates to 600px for Material-UI */
+    .toolbar {
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .menuButton {
+    margin-right: 16px; /* may be an area of cconcern theme.spacing(2) typically translates to 16px for Material-UI */
+  }
+  
+  @media (min-width: 600px) {
+    .menuButton {
+      display: none;
+    }
+  }
+
+  /* .drawer {
+    width: 100%;  /* Default width for mobile or smaller screens */
+    /* flex-shrink: 1;  Default flex shrink value
+*/ 
+
+/* Apply styles for screens 600px and above */
+@media (min-width: 600px) {
+    .drawer {
+        width: 240px; /* Replace with your drawerWidth value */
+        flex-shrink: 0;
+    }
+}
+
+.drawerPaper {
+    width: 240px; /* Replace with your drawerWidth value */
+}
+
+.LinkButton:hover {
+  color: white !important;
+  text-decoration: none;
+}
+  

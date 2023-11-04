@@ -1,0 +1,104 @@
+/* .movie{
+    padding:10px;
+}
+
+.title{
+    
+         color: #222222;
+        text-overflow: ellipsis;
+        width: 230px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+    
+    
+}
+
+.links{
+    align-items: center;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+  
+
+.links:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img {
+    border-radius: 20px;
+    
+    height: 300px;
+    margin-bottom: 10px; 
+ } 
+
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+
+ */
+
+
+ .movie {
+    padding: 10px;
+}
+
+.title {
+    color: #222222;
+    text-overflow: ellipsis;
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.dark-mode-text {
+    color: #ffffff; /* White color for dark mode */
+}
+
+.links {
+    align-items: center;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #222222; /* default text color for light mode */
+}
+
+.links.dark-mode-text {
+    color: #ffffff; /* White color for dark mode */
+}
+
+.links:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img {
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* default border for light mode */
+}
+
+.dark-mode-movie .img {
+    border-color: #555; /* darker border for dark mode */
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+/* For the movie component's background in dark mode */
+

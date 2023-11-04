@@ -1,0 +1,114 @@
+
+
+.containerSpaceAround {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 !important;
+}
+
+/* Media query for screen sizes less than or equal to 600px (sm breakpoint in Material-UI) */
+@media (max-width: 600px) {
+    .containerSpaceAround {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.Poster {
+    border-radius: 5px;
+    box-shadow: 0.5em 1em 1em rgb(64, 64, 70);
+    width: 100%;
+    height: auto;
+}
+
+/* Assuming a common medium (md) breakpoint of 768px */
+@media (max-width: 768px) {
+    .Poster {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+/* Assuming a common small (sm) breakpoint of 576px */
+@media (max-width: 576px) {
+    .Poster {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Assuming a common small (sm) breakpoint of 576px */
+@media (max-width: 576px) {
+    .links {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.genresContainer {
+    margin: 10px 0 !important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.genreImage {
+    margin-right: 10px;
+    height: 30px;
+    /* filter: theme.palette.mode === 'dark' && 'invert(1)', apply this using useEffect */
+}
+
+.castImage {
+    width: 100%;
+    max-width: 7em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.buttonsContainer{
+    display: flex;
+	justify-content: space-between;
+	width: 100%,
+}
+
+@media (max-width: 576px) {
+    .buttonsContainer {
+        flex-direction: column;
+    }
+}
+
+
+/* Corresponds to StyledModal */
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Corresponds to Video */
+.video {
+    width: 50%;
+    height: 50%;
+}
+
+/* Media query for screen sizes 'sm' and below */
+@media (max-width: 600px) { /* Assuming 'sm' breakpoint is 600px */
+    .video {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+

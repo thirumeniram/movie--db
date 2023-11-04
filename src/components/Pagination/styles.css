@@ -1,0 +1,37 @@
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    margin: 30px 2px;
+}
+
+
+.pagenum {
+    margin: 0 20px !important;
+    color: black
+} */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 30px 2px;
+}
+
+.pagenum {
+    margin: 0 20px !important;
+    color: black; /* Default color for light mode */
+}
+
+.dark-mode-text .pagenum {
+    color: #ffffff; /* White color for dark mode */
+}

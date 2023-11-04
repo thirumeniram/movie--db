@@ -1,0 +1,42 @@
+
+/* styles.css */
+:root {
+    --dynamic-color: white;  /* default to white */
+    --dynamic-filter: none;  /* default to none */
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--dynamic-color);
+}
+
+.input {
+    color: var(--dynamic-color); /* make text color white */
+    
+    &::before {
+        border-bottom: 2px solid white !important; 
+        content: "" !important; /* make underline persistent and set its color to white */
+    }
+    
+    &::after {
+        border-bottom: 2px solid white; 
+        content: "" !important; /* focused underline */
+    }
+    
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .searchContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .input {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+
+.imageLink {
+    display: flex;
+    justify-content: center;
+    padding: 10% 0;
+}
+
+.image {
+    width: 60%;
+    color:black
+}
+
+.links {
+    color:  #000; /* example value; replace with the color you want */
+    text-decoration: none;
+}
+
+
+/* ... existing styles ... */
+
+.dark-mode-text {
+    color: #ffffff; /* white color for dark mode */
+}
+
+/* If you have images/icons that need inversion in dark mode, you can add a class for that */
+.dark-mode-icon {
+    filter: invert(1);
+}
+

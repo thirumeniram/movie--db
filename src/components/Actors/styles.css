@@ -1,0 +1,7 @@
+/* Corresponds to Img */
+.Img {
+    max-width: 90%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0.5em 0.5em 1em;
+}
