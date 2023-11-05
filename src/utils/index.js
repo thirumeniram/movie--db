@@ -18,6 +18,7 @@ export const fetchToken = async () => {
 		}
 	} catch (error) {
 		console.log(error);
+		
 	}
 };
 
