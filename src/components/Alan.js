@@ -25,13 +25,13 @@ const useAlan = () => {
 					);
 
 					if (foundGenre) {
-						window.location.href = '/';
+						// window.location.href = '/';
 						dispatch(selectGenreOrCategory(foundGenre.id));
 					} else {
 						const category = genreOrCategory.startsWith('top')
 							? 'top_rated'
 							: genreOrCategory;
-						window.location.href = '/';
+						// window.location.href = '/';
 						dispatch(selectGenreOrCategory(category));
 					}
 				} else if (command === 'changeMode') {
