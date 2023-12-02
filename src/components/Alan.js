@@ -48,37 +48,11 @@ const useAlan = () => {
 				} else if (command === 'search') {
 					dispatch(searchMovie(query));
 				}
-				else if (command === 'profile') {
-					// Check if the user is authenticated
-					
-					
-						if(user ) // Added user null check
-						// ... (rest of your logic)
-                        {
-							window.location.href = `/profile/${user.id}`;
-						}
-						
-						
-					 else {
-						// Handle the scenario where the user is not authenticated
-						// If you need to fetch more user data before navigating, do it here.
-						// For example:
-						// fetchUserData(user.id).then(data => {
-						//   if(data) {
-						//     window.location.href = `/profile/${user.id}`;
-						//   } else {
-						//     console.error("Failed to fetch user data!");
-						//   }
-						// }).catch(err => {
-						//   console.error("Error fetching user data:", err);
-						// });
-						console.error("User is not authenticated! Please login to view the profile.");
-					}
-				}
+				
 
 			},
 		});
-	}, [dispatch, setMode,user, isAuth]);
+	}, [dispatch, setMode]);
 };
 
 export default useAlan;
